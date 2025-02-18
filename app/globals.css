@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body{
+    background-color: #ffffff;
+    color: #333333;
+}
+
+main{
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgb(200, 200, 200, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    height: 100vh;
+    height: 100dvh;
+}
+
+.dark html, .dark body{
+    background-color: #121212;
+    color: #E0E0E0
+}
+
+.dark main{
+    background: rgb(18, 18, 18);
+    background: radial-gradient(circle, rgba(50, 50, 50, 1) 0%, rgba(18, 18, 18, 1) 100%);
+    height: 100vh;
+    height: 100dvh;
+}

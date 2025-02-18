@@ -1,19 +1,18 @@
 "use client";
-import LangDropdown from "@/components/langDropdown";
-import ThemeMode from "@/components/thememode";
-import useTranslation from "@/hooks/use-translation";
-
+import CoverParticles from "@/components/coverParticles";
+import TransitionPage from "@/components/transition-page";
+/*import useTranslation from "@/hooks/use-translation";*/
 
 function App() {
-  const {t} = useTranslation();
+  {/*const { t } = useTranslation();*/}
   return (
-    <div>
-      <div>
-        <h1 className="text-72 text-black dark:text-white">{t('test')}</h1>
+    <main>
+      <TransitionPage />
+      <div className="flex min-h-[100vh] h-full bg-no-repeat">
+        <CoverParticles/>
+        introduccion
       </div>
-      <ThemeMode />
-      <LangDropdown />
-    </div>
+    </main>
   );
 }
 
