@@ -4,6 +4,7 @@ import { itemsNavbar } from "@/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MotionTransition from "./transition-component";
+import ThemeMode from "@/components/thememode";
 
 
 
@@ -23,6 +24,7 @@ const Navbar = () => {
               <Link href={item.link}>{item.icon}</Link>
             </div>
           ))}
+          <ThemeMode/>
         </div>
       </nav>
     </MotionTransition>

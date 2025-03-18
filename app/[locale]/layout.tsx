@@ -4,7 +4,9 @@ import { TranslationsProvider } from "@neiderruiz/translate-files/next-js";
 import i18nConfig from "@/i18nConfig";
 import { resources } from "@/services/langs/index";
 import Navbar from "@/components/NavBar";
-import ThemeMode from "@/components/thememode";
+
+import Header from "@/components/header";
+
 
 export const metadata: Metadata = {
   title: "Macjainer Molano Ramos",
@@ -24,8 +26,9 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className="w-full ">
-      <ThemeMode />
+
       <Navbar/>
+      <Header />
           <TranslationsProvider
             fallbackLng={i18nConfig.locales}
             locale={locale}

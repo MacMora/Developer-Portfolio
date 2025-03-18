@@ -1,4 +1,17 @@
 {
-    "test": "Hi I'm Macjainer Molano"
+    "inicio": {
+        "sequence": {
+            "line_1": "Full Stack Web Developer",
+            "line_2": "Wordpress Developer",
+            "line_3": "React Developer",
+            "line_4": "Database Developer",
+            "line_5": "Automation Developer",
+            "line_6": "Designer at Figma"
+        },
+        "description": "Systems Engineering student with an emphasis on web and software development, I am dedicated to creating high-impact digital experiences for the business world.",
+        "button": {
+            "projects": "See Projects",
+            "contact": "Contact me"
+        }
+    }
 }
-  

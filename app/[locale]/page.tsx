@@ -1,16 +1,15 @@
 "use client";
+import Introduction from "@/components/introduction";
 import CoverParticles from "@/components/coverParticles";
 import TransitionPage from "@/components/transition-page";
-/*import useTranslation from "@/hooks/use-translation";*/
 
 function App() {
-  {/*const { t } = useTranslation();*/}
   return (
     <main>
       <TransitionPage />
       <div className="flex min-h-[100vh] h-full bg-no-repeat">
         <CoverParticles/>
-        introduccion
+        <Introduction/>
       </div>
     </main>
   );

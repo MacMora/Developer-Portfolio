@@ -1,3 +1,17 @@
 {
-    "test": "Hola soy Macjainer Molano"
+    "inicio": {
+        "sequence": {
+            "line_1": "Desarrollador Web Full Stack",
+            "line_2": "Desarrollador Wordpress",
+            "line_3": "Desarrollador React",
+            "line_4": "Desarrollador de Bases de Datos",
+            "line_5": "Desarrollador de Automatizaciones",
+            "line_6": "Diseñador en Figma"
+        },
+        "description": "Estudiante de Ingeniería de Sistemas con un énfasis en desarrollo web y de software, me dedico a crear experiencias digitales de gran impacto para el ámbito empresarial.",
+        "button": {
+            "projects": "Ver Proyectos",
+            "contact": "Contáctame"
+        }
+    }
 }

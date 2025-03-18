@@ -1,19 +1,22 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Rss, Crop, Pencil, Computer, Book, Rocket, Speech, Github, Download, Earth } from "lucide-react";
+/*import useTranslation from "./hooks/use-translation";
+
+const { t } = useTranslation();*/
 
 export const socialNetworks = [
     {
         id: 1,
-        logo: <Youtube size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 2,
         logo: <Linkedin size={30} strokeWidth={1} />,
         src: "#!",
     },
     {
+        id: 2,
+        logo: <Github size={30} strokeWidth={1} />,
+        src: "#!",
+    },
+    {
         id: 3,
-        logo: <Twitter size={30} strokeWidth={1} />,
+        logo: <Earth size={30} strokeWidth={1} />,
         src: "#!",
     },
     {
@@ -23,7 +26,7 @@ export const socialNetworks = [
     },
     {
         id: 5,
-        logo: <Twitch size={30} strokeWidth={1} />,
+        logo: <Download size={30} strokeWidth={1} />,
         src: "#!",
     },
 ];
@@ -62,67 +65,40 @@ export const itemsNavbar = [
     },
 ];
 
-export const dataAboutPage = [
+export const experiencia = [
     {
         id: 1,
-        title: "Frontend Developer",
-        subtitle: "TechSolutions",
-        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
-        date: "Nov 2023 ",
+        title: "Desarrollador Web Ejecutivo",
+        subtitle: "Coordenadas.co",
+        short_description: "Actualmente me desempeño como Desarrollador Web Ejecutivo, creando y manteniendo sitios web a medida con WordPress y React, enfocado en UX, rendimiento y soluciones personalizadas para cada cliente.",
+        description: "Actualmente me desempeño como Desarrollador Web Ejecutivo en Coordenadas.co, donde me he especializado en la creación y mantenimiento de sitios web a la medida utilizando WordPress y React. Mi principal foco fue mejorar la experiencia de usuario (UX) y optimizar el rendimiento de las plataformas desarrolladas. Como desarrollador líder implementé funcionalidades interactivas utilizando React, personalicé temas y plugins en WordPress con PHP y aseguré la compatibilidad con dispositivos móviles y navegadores. También trabajé en la integración de herramientas SEO para mejorar la visibilidad en buscadores, configuré servidores web y administré dominios para asegurar el buen funcionamiento de los proyectos. En este rol, logré entregar proyectos dentro de los plazos establecidos y con altos estándares de calidad, adaptándome a las necesidades específicas de los clientes.",
+        date: "Marzo 2024 - Presente",
+        habilities: {
+            1: "Desarrollo y personalización de temas y plugins en WordPress: Capacidad para diseñar y desarrollar temas y plugins personalizados que se ajusten a las necesidades específicas de los clientes.",
+            2: "Creación de interfaces de usuario dinámicas y responsivas con React.js: Diseño y desarrollo de interfaces de usuario interactivas y adaptables a diferentes dispositivos y tamaños de pantalla.",
+            3: "Implementación y gestión de bases de datos (SQL, MySQL): Configuración y mantenimiento de bases de datos eficientes y seguras.",
+            4: "Optimización de rendimiento y SEO: Implementación de técnicas de optimización para mejorar la velocidad de carga de las páginas y su posicionamiento en motores de búsqueda.",
+            5: "Gestión de servidores y administración de dominios a través de cPanel: Configuración y mantenimiento de servidores web y gestión de dominios utilizando cPanel.",
+            6: "Colaboración en equipos de desarrollo ágil: Participación en reuniones diarias de stand-up, planificación de sprints y revisiones de retrospectiva para mejorar continuamente el proceso de desarrollo.",
+        }
     },
     {
         id: 2,
-        title: "Creador de Experiencias Digitales",
-        subtitle: "PixelCrafters",
-        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
-        date: "May 2021",
-    },
-    {
-        id: 3,
-        title: "Especialista en Desarrollo Frontend",
-        subtitle: "CodeForge Solutions",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
-        date: "Ago 2019",
-    },
-    {
-        id: 4,
-        title: "Prácticas Grado",
-        subtitle: "WebWizards Inc.",
-        description: "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
-        date: "Mar 2018",
+        title: "Desarrollador Web en Wordpress y React",
+        subtitle: "Sibartech Tecnology",
+        short_description: "Trabajé como Desarrollador Web liderando proyectos en WordPress y React, desarrollando sitios dinámicos, responsivos y optimizados, desde la idea hasta su implementación final.",
+        description: "Trabajé durante un año como desarrollador web en Sibartech Technology, donde dirigí y contribuí a múltiples proyectos enfocados en el desarrollo de sitios web dinámicos y funcionales utilizando WordPress y React. En este rol, fui responsable de planificar y ejecutar proyectos web desde la etapa inicial hasta la implementación final. Diseñé interfaces modernas y responsivas, optimicé el rendimiento del sitio web para tiempos de carga más rápidos e implementé soluciones avanzadas de administración de contenido en WordPress. Además, desarrollé integraciones personalizadas utilizando React para mejorar la interactividad y la funcionalidad del proyecto. También realicé configuraciones avanzadas de servidores, administré bases de datos y garanticé la seguridad del sitio web. En Sibartech Technology, trabajé en estrecha colaboración con los clientes para comprender sus necesidades específicas, brindando soluciones alineadas con sus objetivos comerciales. Esta experiencia me permitió desarrollar habilidades de gestión de proyectos y colaborar de manera efectiva con equipos multidisciplinarios.",
+        date: "Enero 2023 - Febrero 2024",
+        habilities: {
+            1: "Planificación y ejecución de proyectos web: Responsabilidad de llevar proyectos desde la etapa inicial hasta la implementación final, asegurando que se cumplan los objetivos y plazos establecidos.",
+            2: "Colaboración con clientes y equipos multidisciplinarios: Trabajo cercano con clientes para comprender sus necesidades y colaboración efectiva con equipos multidisciplinarios para alcanzar objetivos comunes.",
+            3: "Desarrollo de integraciones personalizadas con React: Creación de soluciones personalizadas para mejorar la interactividad y funcionalidad de los proyectos, adaptándose a los requerimientos específicos.",
+            4: "Diseño de interfaces de usuario (UI) modernas y responsivas: Creación de interfaces atractivas y funcionales que se adapten a diferentes dispositivos y brinden una experiencia de usuario óptima.",
+            5: "Configuración avanzada de servidores y seguridad web: Realización de configuraciones de servidores y garantía de la seguridad de los sitios web para protegerlos de vulnerabilidades.",
+        }
     },
 ]
 
-export const dataCounter = [
-    {
-        id: 0,
-        endCounter: 10,
-        text: "Años de experiencia",
-        lineRight: true,
-        lineRightMobile: true,
-    },
-    {
-        id: 1,
-        endCounter: 80,
-        text: "Clientes satisfechos",
-        lineRight: true,
-        lineRightMobile: false,
-    },
-    {
-        id: 2,
-        endCounter: 220,
-        text: "Proyectos finalizados",
-        lineRight: true,
-        lineRightMobile: true,
-    },
-    {
-        id: 3,
-        endCounter: 30,
-        text: "Premios ganadores",
-        lineRight: false,
-        lineRightMobile: false,
-    },
-];
 
 export const serviceData = [
     {
@@ -209,49 +185,4 @@ export const dataPortfolio = [
         urlGithub: "#!",
         urlDemo: "#!",
     }
-];
-
-export const dataTestimonials = [
-    {
-        id: 1,
-        name: "George Snow",
-        description:
-            "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
-        imageUrl: "/profile1.png",
-    },
-    {
-        id: 2,
-        name: "Juan Pérez",
-        description:
-            "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
-        imageUrl: "/profile2.png",
-    },
-    {
-        id: 3,
-        name: "María García",
-        description:
-            "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
-        imageUrl: "/profile3.png",
-    },
-    {
-        id: 4,
-        name: "Laura Snow",
-        description:
-            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
-        imageUrl: "/profile4.png",
-    },
-    {
-        id: 5,
-        name: "Carlos Sánchez",
-        description:
-            "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
-        imageUrl: "/profile5.png",
-    },
-    {
-        id: 6,
-        name: "Antonio Martínez",
-        description:
-            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
-        imageUrl: "/profile6.png",
-    },
 ];
