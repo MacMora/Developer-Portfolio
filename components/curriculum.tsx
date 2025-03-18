@@ -11,11 +11,23 @@ import {
   useDisclosure,
 } from '@heroui/react';
 
+// Define la interfaz para los items de experiencia
+interface ExperienceItem {
+  id: number;
+  title: string;
+  subtitle: string;
+  date: string;
+  short_description: string;
+  description: string;
+}
+
 const Curriculum = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [selectedExperience, setSelectedExperience] = React.useState<any>(null);
+  // Cambio 1: Define el tipo correcto en lugar de "any"
+  const [selectedExperience, setSelectedExperience] = React.useState<ExperienceItem | null>(null);
 
-  const handleOpen = (experienceItem) => {
+  // Cambio 2: Agrega el tipo al parámetro experienceItem
+  const handleOpen = (experienceItem: ExperienceItem) => {
     setSelectedExperience(experienceItem);
     onOpen();
   };
