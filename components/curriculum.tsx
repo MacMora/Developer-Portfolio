@@ -1,5 +1,6 @@
 "use client";
 import { experiencia } from "@/data";
+import { useState, useEffect } from "react";
 import React from "react";
 import {
   Modal,
@@ -9,16 +10,48 @@ import {
   ModalFooter,
   Button,
   useDisclosure,
-} from '@heroui/react';
+} from "@heroui/react";
+
+// Define la interfaz para los items de experiencia
+interface ExperienceItem {
+  id: number;
+  title: string;
+  subtitle: string;
+  short_description: string;
+  description: string;
+  date: string;
+  habilities: string[];
+}
 
 const Curriculum = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [selectedExperience, setSelectedExperience] = React.useState<any>(null);
+  // Cambio 1: Define el tipo correcto en lugar de "any"
+  const [selectedExperience, setSelectedExperience] =
+    React.useState<ExperienceItem | null>(null);
 
-  const handleOpen = (experienceItem) => {
+  // Cambio 2: Agrega el tipo al parámetro experienceItem
+  const handleOpen = (experienceItem: ExperienceItem) => {
     setSelectedExperience(experienceItem);
     onOpen();
   };
+
+  const [modalSize, setModalSize] = useState("4xl");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        // Pantallas móviles (sm)
+        setModalSize("full");
+      } else {
+        setModalSize("4xl");
+      }
+    };
+
+    handleResize(); // Ejecuta la función al cargar el componente
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="flex flex-col justify-center divide-y divide-slate-200">
@@ -61,8 +94,14 @@ const Curriculum = () => {
 
       {/* Modal fuera del map */}
       {selectedExperience && (
-        <Modal backdrop={"blur"} size={"4xl"} isOpen={isOpen} onClose={onClose}>
-          <ModalContent className="z-100">
+        <Modal
+          backdrop={"blur"}
+          size={modalSize}
+          isDismissable={true}
+          isOpen={isOpen}
+          onClose={onClose}
+        >
+          <ModalContent className="z-100 overflow-auto">
             {(onClose) => (
               <>
                 <ModalHeader className="flex flex-col gap-1">
@@ -71,6 +110,12 @@ const Curriculum = () => {
                 <ModalBody>
                   <p>{selectedExperience.subtitle}</p>
                   <p>{selectedExperience.description}</p>
+                  <ul className="list-disc pl-5 space-y-2">
+                    {selectedExperience.habilities &&
+                      Object.values(selectedExperience.habilities).map(
+                        (hability, index) => <li key={index}>{hability}</li>
+                      )}
+                  </ul>
                 </ModalBody>
                 <ModalFooter>
                   <Button color="danger" variant="light" onPress={onClose}>
