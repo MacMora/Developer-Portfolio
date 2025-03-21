@@ -1,8 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, JSX, SVGProps } from "react";
 import { Switch } from "@heroui/react";
 
-export const MoonIcon = (props) => {
+export const MoonIcon = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => {
   return (
     <svg
       aria-hidden="true"
@@ -21,7 +21,7 @@ export const MoonIcon = (props) => {
   );
 };
 
-export const SunIcon = (props) => {
+export const SunIcon = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => {
   return (
     <svg
       aria-hidden="true"
