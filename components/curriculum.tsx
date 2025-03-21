@@ -25,26 +25,20 @@ interface ExperienceItem {
 
 const Curriculum = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  // Cambio 1: Define el tipo correcto en lugar de "any"
+
   const [selectedExperience, setSelectedExperience] =
     React.useState<ExperienceItem | null>(null);
 
-  // Cambio 2: Agrega el tipo al parámetro experienceItem
   const handleOpen = (experienceItem: ExperienceItem) => {
     setSelectedExperience(experienceItem);
     onOpen();
   };
 
-  const [modalSize, setModalSize] = useState("4xl");
+  const [modalSize, setModalSize] = useState<"4xl" | "full">("4xl");
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 640) {
-        // Pantallas móviles (sm)
-        setModalSize("full");
-      } else {
-        setModalSize("4xl");
-      }
+      setModalSize(window.innerWidth < 640 ? "full" : "4xl");
     };
 
     handleResize(); // Ejecuta la función al cargar el componente
