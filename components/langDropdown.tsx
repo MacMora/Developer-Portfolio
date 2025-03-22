@@ -4,7 +4,6 @@ import Image from "next/image";
 import useTranslation from "@/hooks/use-translation";
 import i18nConfig from "@/i18nConfig";
 import { usePathname, useRouter } from "next/navigation";
-// Eliminamos la importación incorrecta y usamos una técnica diferente para detectar el idioma del navegador
 
 type Lang = {
   code: string;
@@ -30,24 +29,51 @@ const LanguageSwitcher = () => {
   const currentPathname = usePathname();
   const { i18n } = useTranslation();
   
-  const [currentLang, setCurrentLang] = useState(languages[0]);
-  
-  useEffect(() => {
-    const lang = languages.find((l) => l.code === i18n.language) || languages[0];
-    setCurrentLang(lang);
-  }, [i18n.language]);
-
-  // Función para detectar el idioma del navegador
-  const detectBrowserLanguage = (): string => {
-    if (typeof window !== 'undefined') {
-      const browserLang = navigator.language.split('-')[0]; // Obtiene 'es' de 'es-ES'
-      return languages.some(lang => lang.code === browserLang) ? browserLang : i18nConfig.defaultLocale;
+  // Determinar idioma actual basado en la URL
+  const getCurrentLanguageFromPath = (path: string): string => {
+    // Primero revisar la URL
+    for (const lang of languages) {
+      if (path.startsWith(`/${lang.code}/`) || path === `/${lang.code}`) {
+        return lang.code;
+      }
     }
+    // Si no se encuentra en la URL, devolver el idioma predeterminado
     return i18nConfig.defaultLocale;
   };
-
+  
+  // Estado para el idioma actual
+  const [currentLang, setCurrentLang] = useState<Lang>(
+    languages.find(l => l.code === getCurrentLanguageFromPath(currentPathname)) || languages[0]
+  );
+  
+  // Efecto para actualizar el idioma cuando cambia la ruta o i18n
+  useEffect(() => {
+    const currentLanguageCode = getCurrentLanguageFromPath(currentPathname);
+    const lang = languages.find(l => l.code === currentLanguageCode) || languages[0];
+    
+    console.log("Ruta actual:", currentPathname);
+    console.log("Idioma detectado de la ruta:", currentLanguageCode);
+    
+    // Actualizar el estado solo si es diferente para evitar rerenders innecesarios
+    if (currentLang.code !== lang.code) {
+      console.log("Actualizando idioma a:", lang.code);
+      setCurrentLang(lang);
+    }
+    
+    // Forzar actualización del idioma en i18n si no coincide con la ruta
+    if (i18n.language !== currentLanguageCode) {
+      console.log("Actualizando i18n a:", currentLanguageCode);
+      // Actualizar la cookie para mantener la consistencia
+      document.cookie = `NEXT_LOCALE=${currentLanguageCode};path=/;max-age=${30 * 24 * 60 * 60}`;
+      // Intentar cambiar el idioma en i18n
+      if (i18n.changeLanguage) {
+        i18n.changeLanguage(currentLanguageCode);
+      }
+    }
+  }, [currentPathname, i18n]);
+  
   // Función para obtener la ruta sin el prefijo de idioma
-  const getPathWithoutLocale = (path: string) => {
+  const getPathWithoutLocale = (path: string): string => {
     // Si estamos en la raíz, devolver "/"
     if (path === "/") return "/";
     
@@ -64,16 +90,14 @@ const LanguageSwitcher = () => {
     // Si no hay prefijo de idioma, devolver la ruta original
     return path;
   };
-
-  // Función para cambiar a un idioma específico
-  const switchToLanguage = (newLang: string) => {
-    // Actualizar cookie
-    document.cookie = `NEXT_LOCALE=${newLang};path=/;max-age=${30 * 24 * 60 * 60}`;
+  
+  const switchLanguage = () => {
+    // Determinar el nuevo idioma (alternar entre inglés y español)
+    const newLang = currentLang.code === "en" ? "es" : "en";
+    console.log("Cambiando de idioma:", currentLang.code, "->", newLang);
     
-    // Guardar que el usuario ha seleccionado manualmente un idioma
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('language_manually_set', 'true');
-    }
+    // Actualizar cookie para el nuevo idioma
+    document.cookie = `NEXT_LOCALE=${newLang};path=/;max-age=${30 * 24 * 60 * 60}`;
     
     // Obtener la parte de la ruta sin el prefijo de idioma
     const pathWithoutLocale = getPathWithoutLocale(currentPathname);
@@ -91,27 +115,17 @@ const LanguageSwitcher = () => {
     // Asegurarse de que la ruta no tenga "//" por manipulaciones de cadenas
     newPath = newPath.replace('//', '/');
     
+    console.log("Nueva ruta:", newPath);
+    
+    // Forzar actualización inmediata del estado (no esperar al efecto)
+    const newLangObj = languages.find(l => l.code === newLang) || languages[0];
+    setCurrentLang(newLangObj);
+    
     // Navegar a la nueva ruta y refrescar
     router.push(newPath);
     router.refresh();
   };
-
-  // Efecto para detectar y aplicar el idioma del navegador en la primera carga
-  useEffect(() => {
-    // Verificar si estamos en el cliente
-    if (typeof window !== 'undefined' && !localStorage.getItem('language_manually_set')) {
-      const browserLocale = detectBrowserLanguage();
-      if (browserLocale && browserLocale !== i18n.language) {
-        switchToLanguage(browserLocale);
-      }
-    }
-  }, [currentPathname, i18n.language]);
-
-  const switchLanguage = () => {
-    const newLang = currentLang.code === "en" ? "es" : "en";
-    switchToLanguage(newLang);
-  };
-
+  
   return (
     <button
       onClick={switchLanguage}
