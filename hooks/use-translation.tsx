@@ -1,5 +1,5 @@
 import { FlattenKeys, useTypedTranslation } from '@neiderruiz/translate-files/next-js/hooks';
-import en from '@/services/langs/en.json';
+import en from '@/services/langs/en/en.json';
 type Tylelang = typeof en
 
 export type KeysTranslation = FlattenKeys<Tylelang>
