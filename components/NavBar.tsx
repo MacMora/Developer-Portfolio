@@ -1,7 +1,6 @@
 "use client";
 
 import { itemsNavbar } from "@/data";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MotionTransition from "./transition-component";
 import ThemeMode from "@/components/thememode";
@@ -21,7 +20,7 @@ const Navbar = () => {
             className={`px-3 py2 transition duration-150 rounded-full cursor-pointer hover:bg-[#0070F3] dark:hover:bg-[#00C8C8]
               ${router === item.link && 'bg-[#0070F3] dark:bg-[#00C8C8]'}`}
             >
-              <Link href={item.link}>{item.icon}</Link>
+              <a href={item.link}>{item.icon}</a>
             </div>
           ))}
           <ThemeMode/>
