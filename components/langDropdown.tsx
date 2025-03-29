@@ -90,7 +90,7 @@ const LanguageSwitcher = () => {
   return (
     <button
       onClick={switchLanguage}
-      className="flex items-center gap-2 py-2 px-3 rounded-3xl hover:bg-[#0070F3] dark:hover:bg-[#00C8C8]"
+      className="flex items-center gap-2 py-2 px-3 rounded-3xl hover:bg-[#7828c8] dark:hover:bg-[#9455d3]"
     >
       <Image
         src={currentLang.flag}

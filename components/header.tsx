@@ -14,7 +14,7 @@ const Header = () => {
           <Link href="/">
             <h1 className="my-3 text-4xl font-bold text-center md:text-left">
               Mac
-              <span className="text-[#0070F3] dark:text-[#00C8C8]">Dev</span>
+              <span className="text-[#7828c8] dark:text-[#9455d3]">Dev</span>
             </h1>
           </Link>
           <div className="flex items-center justify-center gap-7">
@@ -23,7 +23,7 @@ const Header = () => {
                 key={id}
                 href={src}
                 target="_blank"
-                className="transition-all duration-300 hover:text-[#0070F3] dark:hover:text-[#00C8C8]"
+                className="transition-all duration-300 hover:text-[#7828c8] dark:hover:text-[#9455d3]"
               >
                 {logo}
               </Link>

@@ -45,10 +45,10 @@ const CoverParticles = () => {
             },
             particles: {
               color: {
-                value: "#0070F3",
+                value: "#7828c8",
               },
               links: {
-                color: "#0070F3",
+                color: "#7828c8",
                 distance: 150,
                 enable: true,
                 opacity: 0.5,

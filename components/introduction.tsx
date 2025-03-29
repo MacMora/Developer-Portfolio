@@ -40,7 +40,7 @@ function Introduction() {
               wrapper="span"
               speed={50}
               repeat={Infinity}
-              className="font-bold text-[#0070F3] dark:text-[#00C8C8]"
+              className="font-bold text-[#7828c8] dark:text-[#9455d3]"
             />
           </h1>
           <p className="mx-auto mb-2 text-xl md:mx-0 md:mb-8">
@@ -55,7 +55,7 @@ function Introduction() {
             </Link>
             <Link
               href="/proyectos"
-              className="px-3 py-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-[#0070F3]/50 dark:hover:shadow-[#00C8C8]/50 text-[#0070F3] dark:text-[#00C8C8] border-[#0070F3] dark:border-[#00C8C8]"
+              className="px-3 py-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-[#0070f0]/50 dark:hover:shadow-[#67abf9]/50 text-[#0070f0] dark:text-[#67abf9] border-[#0070F0] dark:border-[#67abf9]"
             >
               {t('inicio.button.contact')}
             </Link>

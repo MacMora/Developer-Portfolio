@@ -14,8 +14,8 @@ const AboutMe = () => {
         <ContainerPage>
           <div className="">
             <div className="justify-items-center">
-              <h1 className="font-bold mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10 ">
-                SOBRE <span className="text-[#0070F3] dark:text-[#00C8C8]">MI</span>
+              <h1 className="font-bold mb-5 text-2xl leading-tight text-center md:text-4xl md:mb-10 ">
+                SOBRE <span className="text-[#7828c8] dark:text-[#9455d3]">MI</span>
               </h1>
               <div className="flex flex-col justify-items-center items-center">
                 <Image
@@ -37,7 +37,7 @@ const AboutMe = () => {
               </div>
             </div>
             <div className="py-[80px]">
-                <h2 className="font-bold mb-5 text-2xl leading-tight text-center md:text-4xl md:mb-10 ">Toda mi <span className="text-[#0070F3] dark:text-[#00C8C8]">experiencia laboral</span></h2>
+                <h2 className="font-bold mb-5 text-2xl leading-tight text-center md:text-4xl md:mb-10 ">Toda mi <span className="text-[#7828c8] dark:text-[#9455d3]">experiencia laboral</span></h2>
                 <Curriculum />
             </div>
           </div>
