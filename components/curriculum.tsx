@@ -93,6 +93,7 @@ const Curriculum = () => {
           isDismissable={true}
           isOpen={isOpen}
           onClose={onClose}
+          scrollBehavior="outside"
         >
           <ModalContent className="z-100 overflow-auto">
             {(onClose) => (

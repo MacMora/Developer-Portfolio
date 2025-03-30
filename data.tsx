@@ -1,4 +1,4 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Rss, Speech, Github, Download, Earth } from "lucide-react";
+import { CodeSquare, HomeIcon, UserRound, Linkedin, Rss, Github, Download, Earth } from "lucide-react";
 /*import useTranslation from "./hooks/use-translation";
 
 const { t } = useTranslation();*/
@@ -47,21 +47,9 @@ export const itemsNavbar = [
     },
     {
         id: 3,
-        title: "Book",
-        icon: <BookText size={25} className="color-black dark:color-white" strokeWidth={1} />,
-        link: "/services",
-    },
-    {
-        id: 4,
         title: "Target",
         icon: <CodeSquare size={25} className="color-black dark:color-white" strokeWidth={1} />,
         link: "/portfolio",
-    },
-    {
-        id: 5,
-        title: "Home",
-        icon: <Speech size={25} className="color-black dark:color-white" strokeWidth={1} />,
-        link: "/testimonials",
     },
 ];
 

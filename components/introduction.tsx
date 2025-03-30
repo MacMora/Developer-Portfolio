@@ -2,6 +2,7 @@ import useTranslation from "@/hooks/use-translation";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
+import { Button } from "@heroui/react";
 
 function Introduction() {
   const { t } = useTranslation();
@@ -46,18 +47,11 @@ function Introduction() {
           <p className="mx-auto mb-2 text-xl md:mx-0 md:mb-8">
             {t("inicio.description")}
           </p>
-          <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
+          <div className="flex items-center justify-center md:justify-start">
             <Link
-              href="/proyectos"
-              className="px-3 py-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl border-black dark:border-white hover:shadow-xl dark:hover:shadow-white/50 hover:shadow-black/50"
+              href="/portfolio"
             >
-              {t('inicio.button.projects')}
-            </Link>
-            <Link
-              href="/proyectos"
-              className="px-3 py-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-[#0070f0]/50 dark:hover:shadow-[#67abf9]/50 text-[#0070f0] dark:text-[#67abf9] border-[#0070F0] dark:border-[#67abf9]"
-            >
-              {t('inicio.button.contact')}
+              <Button color="secondary" variant="ghost" >{t('inicio.button.projects')}</Button>
             </Link>
           </div>
         </div>

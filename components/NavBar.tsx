@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import MotionTransition from "./transition-component";
 import ThemeMode from "@/components/thememode";
 import Link from "next/link";
+import ContactForm from "./contact";
 
 
 
@@ -18,12 +19,13 @@ const Navbar = () => {
         <div className="flex items-center justify-center gap-2 px-4 py-1 rounded-full bg-black/15 dark:bg-white/15 background-blur-sm">
           {itemsNavbar.map((item) => (
             <div key={item.id}
-            className={`px-3 py2 transition duration-150 rounded-full cursor-pointer hover:bg-[#7828c8] dark:hover:bg-[#9455d3]
+            className={`px-3 transition duration-150 rounded-full cursor-pointer hover:bg-[#7828c8] dark:hover:bg-[#9455d3]
               ${router === item.link && 'bg-[#7828c8] dark:bg-[#9455d3]'}`}
             >
               <Link href={item.link}>{item.icon}</Link>
             </div>
           ))}
+          <ContactForm/>
           <ThemeMode/>
         </div>
       </nav>

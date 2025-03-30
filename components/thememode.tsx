@@ -2,7 +2,9 @@
 import { useState, useEffect, JSX, SVGProps } from "react";
 import { Switch } from "@heroui/react";
 
-export const MoonIcon = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => {
+export const MoonIcon = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => {
   return (
     <svg
       aria-hidden="true"
@@ -21,7 +23,9 @@ export const MoonIcon = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement
   );
 };
 
-export const SunIcon = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => {
+export const SunIcon = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => {
   return (
     <svg
       aria-hidden="true"
@@ -41,7 +45,6 @@ export const SunIcon = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
 };
 
 function ThemeMode() {
-  
   const [theme, setTheme] = useState(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return "dark";
@@ -61,17 +64,18 @@ function ThemeMode() {
   const handleChangeTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
-  
+
   return (
-    <Switch
-      isSelected={theme === "dark"}
-      onChange={handleChangeTheme}
-      endContent={<MoonIcon />}
-      color="default"
-      size="md"
-      startContent={<SunIcon />}
-    >
-    </Switch>
+    <div className="pl-3">
+      <Switch
+        isSelected={theme === "dark"}
+        onChange={handleChangeTheme}
+        endContent={<MoonIcon />}
+        color="default"
+        size="md"
+        startContent={<SunIcon />}
+      ></Switch>
+    </div>
   );
 }
 
