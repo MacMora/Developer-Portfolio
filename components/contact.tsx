@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 import React, { useState } from "react";
 import {
   Modal,
@@ -14,8 +14,12 @@ import {
   HeroUIProvider,
 } from "@heroui/react";
 import { Mail } from "lucide-react";
+import useTranslation from "@/hooks/use-translation";
 
 const ContactForm = () => {
+
+  const { t } = useTranslation();
+
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -54,48 +58,48 @@ const ContactForm = () => {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
-                {isSubmitted ? "¡Gracias!" : "Contáctame"}
+                {isSubmitted ? t('contact.title_2') : t('contact.title_1')}
               </ModalHeader>
               <ModalBody>
                 {isSubmitted ? (
                   <p className="text-center text-lg">
-                    Tu mensaje ha sido enviado con éxito.<br/>Me pondré en contacto contigo lo más pronto posible para ayudarte.
+                    {t('contact.message')}
                   </p>
                 ) : (
                   <Form className="w-full flex flex-col gap-4" onSubmit={handleSubmit}>
                     <Input
                       isRequired
-                      errorMessage="Por favor ingresa un nombre válido"
-                      label="Nombre"
+                      errorMessage={t('contact.form.name_error')}
+                      label={t('contact.form.name_label')}
                       labelPlacement="outside"
                       name="nombre"
-                      placeholder="Nombre Completo"
+                      placeholder={t('contact.form.name_placeholder')}
                       type="text"
                       variant="bordered"
                     />
 
                     <Input
                       isRequired
-                      errorMessage="Por favor ingresa un correo válido"
-                      label="Correo Electrónico"
+                      errorMessage={t('contact.form.email_error')}
+                      label={t('contact.form.email_label')}
                       labelPlacement="outside"
                       name="email"
-                      placeholder="Ingresa tu correo electrónico"
+                      placeholder={t('contact.form.email_placeholder')}
                       type="email"
                       variant="bordered"
                     />
                     <Textarea 
-                      label="¿Cómo puedo ayudarte?"
+                      label={t('contact.form.textarea_label')}
                       labelPlacement="outside"
                       variant="bordered"
                       name="mensaje"
                     />
                     <div className="flex gap-2">
                       <Button color="secondary" variant="ghost" type="submit">
-                        Enviar
+                        {t('buttons.submit')}
                       </Button>
                       <Button color="danger" variant="light" onPress={onClose}>
-                      {isSubmitted ? "Cerrar" : "Cancelar"}
+                      {isSubmitted ? t('buttons.close') : t('buttons.cancel')}
                       </Button>
                     </div>
                   </Form>
@@ -112,4 +116,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default ContactForm;*/

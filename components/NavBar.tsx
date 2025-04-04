@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import MotionTransition from "./transition-component";
 import ThemeMode from "@/components/thememode";
 import Link from "next/link";
-import ContactForm from "./contact";
+//import ContactForm from "./contact";
 
 
 
@@ -25,7 +25,7 @@ const Navbar = () => {
               <Link href={item.link}>{item.icon}</Link>
             </div>
           ))}
-          <ContactForm/>
+          {/*<ContactForm/>*/}
           <ThemeMode/>
         </div>
       </nav>

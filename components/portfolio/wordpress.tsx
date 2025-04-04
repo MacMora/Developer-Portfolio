@@ -1,7 +1,8 @@
 "use client";
-import { dataPortfolio_wordpress } from "@/data";
+import { DataPortfolio } from "@/data";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import useTranslation from "@/hooks/use-translation";
 import React from "react";
 import {
   Card,
@@ -33,6 +34,10 @@ interface ProjectItem {
 }
 
 const Wordpress: React.FC = () => {
+
+  const { dataWordpress } = DataPortfolio();
+  const { t } = useTranslation();
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(
     null
@@ -42,7 +47,7 @@ const Wordpress: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage: number = 6;
   const totalPages: number = Math.ceil(
-    dataPortfolio_wordpress.length / itemsPerPage
+    dataWordpress.length / itemsPerPage
   );
 
   useEffect(() => {
@@ -64,7 +69,7 @@ const Wordpress: React.FC = () => {
   };
 
   const startIndex: number = (currentPage - 1) * itemsPerPage;
-  const paginatedData: ProjectItem[] = dataPortfolio_wordpress
+  const paginatedData: ProjectItem[] = dataWordpress
     .toReversed()
     .slice(startIndex, startIndex + itemsPerPage);
 
@@ -82,33 +87,21 @@ const Wordpress: React.FC = () => {
   return (
     <div className="py-[80px] justify-items-center">
       <div className="w-full">
-        <h2 className="font-bold text-xl leading-tight text-start md:text-2xl">
-          Desarrollo con{" "}
-          <span className="text-[#7828c8] dark:text-[#9455d3]">WordPress</span>
+        <h2 className="text-[#7828c8] dark:text-[#9455d3] font-bold text-xl leading-tight text-start md:text-2xl">
+          {t('portfolio.projects.wordpress.content.title')}
         </h2>
         <p className="text-sm md:text-lg my-2">
-          Especializado en crear soluciones web robustas y escalables:
+          {t('portfolio.projects.wordpress.content.description')}
         </p>
         <ul className="text-sm md:text-lg list-disc pl-5 space-y-2">
           <li>
-            <b className="text-[#7828c8] dark:text-[#9455d3]">
-              Sitios web a medida:
-            </b>{" "}
-            Diseño responsive, optimizados para SEO y velocidad.
+            {t('portfolio.projects.wordpress.content.main.1')}
           </li>
           <li>
-            <b className="text-[#7828c8] dark:text-[#9455d3]">
-              E-commerce (WooCommerce):
-            </b>{" "}
-            Tiendas online con pasarelas de pago, gestión de inventario y
-            experiencia de usuario mejorada.
+            {t('portfolio.projects.wordpress.content.main.2')}
           </li>
           <li>
-            <b className="text-[#7828c8] dark:text-[#9455d3]">
-              Soporte Técnico & Hosting:
-            </b>{" "}
-            Configuración de servidores (cPanel), migraciones, seguridad y
-            mantenimiento de bases de datos.
+            {t('portfolio.projects.wordpress.content.main.3')}
           </li>
         </ul>
       </div>
@@ -148,7 +141,7 @@ const Wordpress: React.FC = () => {
                 <div className="flex flex-row gap-4 w-full align-end pt-[20px]">
                   <Link href={data.urlWeb} target="_blank" rel="nofollow">
                     <Button color="warning" variant="flat" endContent={<SquareArrowOutUpRightIcon width={15} height={15}/>}>
-                      Visitar Sitio
+                      {t('buttons.visit')}
                     </Button>
                   </Link>
 
@@ -157,7 +150,7 @@ const Wordpress: React.FC = () => {
                     variant="ghost"
                     onPress={() => handleOpen(data)}
                   >
-                    Conocer más
+                    {t('buttons.learn')}
                   </Button>
                 </div>
               </CardFooter>
@@ -220,12 +213,12 @@ const Wordpress: React.FC = () => {
                 <ModalFooter>
                 <Link href={selectedProject.urlWeb} target="_blank" rel="nofollow">
                     <Button color="warning" variant="flat" endContent={<SquareArrowOutUpRightIcon width={15} height={15}/>}>
-                      Visitar Sitio
+                      {t('buttons.visit')}
                     </Button>
                   </Link>
 
                   <Button color="danger" variant="light" onPress={onClose}>
-                    Cerrar
+                    {t('buttons.close')}
                   </Button>
                 </ModalFooter>
               </>

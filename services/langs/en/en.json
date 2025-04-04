@@ -1,17 +1,136 @@
 {
-    "inicio": {
+    "home": {
         "sequence": {
             "line_1": "Full Stack Web Developer",
-            "line_2": "Wordpress Developer",
+            "line_2": "WordPress Developer",
             "line_3": "React Developer",
             "line_4": "Database Developer",
             "line_5": "Automation Developer",
-            "line_6": "Designer at Figma"
+            "line_6": "Figma Designer"
         },
-        "description": "Systems Engineering student with an emphasis on web and software development, I am dedicated to creating high-impact digital experiences for the business world.",
-        "button": {
-            "projects": "See Projects",
-            "contact": "Contact me"
+        "description": "Systems Engineering student with an emphasis on web and software development, dedicated to creating high-impact digital experiences for the business sector."
+    },
+    "about_me": {
+        "title": "ABOUT ME",
+        "description": "I am Macjainer Molano Ramos, a Systems Engineering student with a strong passion for web development and software engineering. I have solid experience as a developer in WordPress and React, domain management, and web hosting server administration using cPanel, as well as handling No-Code automation platforms.",
+        "title_2": "All My Work Experience",
+        "experience":{
+            "sibartech": {
+                "title": "Web Developer in WordPress and React",
+                "short_description": "I worked as a Web Developer leading projects in WordPress and React, developing dynamic, responsive, and optimized websites from concept to final implementation.",
+                "description": "I worked for a year as a web developer at Sibartech Technology, where I led and contributed to multiple projects focused on developing dynamic and functional websites using WordPress and React. In this role, I was responsible for planning and executing web projects from the initial stage to final implementation. I designed modern and responsive interfaces, optimized website performance for faster loading times, and implemented advanced content management solutions in WordPress. Additionally, I developed custom integrations using React to enhance interactivity and project functionality. I also carried out advanced server configurations, managed databases, and ensured website security. At Sibartech Technology, I worked closely with clients to understand their specific needs, providing solutions aligned with their business objectives. This experience allowed me to develop project management skills and collaborate effectively with multidisciplinary teams.",
+                "date": "January 2023 - February 2024",
+                "habilities": {
+                    "1": "Web project planning and execution: Responsible for carrying projects from the initial stage to final implementation, ensuring objectives and deadlines are met.",
+                    "2": "Collaboration with clients and multidisciplinary teams: Close work with clients to understand their needs and effective collaboration with multidisciplinary teams to achieve common goals.",
+                    "3": "Development of custom integrations with React: Creation of tailored solutions to enhance interactivity and project functionality, adapting to specific requirements.",
+                    "4": "Design of modern and responsive user interfaces (UI): Creation of attractive and functional interfaces that adapt to different devices, providing an optimal user experience.",
+                    "5": "Advanced server configuration and web security: Execution of server configurations and assurance of website security to protect against vulnerabilities."
+                }
+            },
+            "coordenadas": {
+                "title": "Executive Web Developer",
+                "short_description": "I currently work as an Executive Web Developer, creating and maintaining custom websites with WordPress and React, focusing on UX, performance, and personalized solutions for each client.",
+                "description": "I currently work as an Executive Web Developer at Coordenadas.co, specializing in creating and maintaining custom websites using WordPress and React. My main focus has been improving user experience (UX) and optimizing platform performance. As a lead developer, I implemented interactive functionalities using React, customized themes and plugins in WordPress with PHP, and ensured compatibility with mobile devices and browsers. I also worked on integrating SEO tools to improve search engine visibility, configured web servers, and managed domains to ensure project functionality. In this role, I successfully delivered projects within deadlines and with high-quality standards, adapting to clients' specific needs.",
+                "date": "March 2024 - Present",
+                "habilities": {
+                    "1": "Development and customization of themes and plugins in WordPress: Ability to design and develop custom themes and plugins tailored to clients' specific needs.",
+                    "2": "Creation of dynamic and responsive user interfaces with React.js: Design and development of interactive and adaptable user interfaces for different devices and screen sizes.",
+                    "3": "Implementation and management of databases (SQL, MySQL): Configuration and maintenance of efficient and secure databases.",
+                    "4": "Performance optimization and SEO: Implementation of optimization techniques to improve page loading speed and search engine ranking.",
+                    "5": "Server management and domain administration via cPanel: Configuration and maintenance of web servers and domain management using cPanel.",
+                    "6": "Collaboration in agile development teams: Participation in daily stand-up meetings, sprint planning, and retrospective reviews to continuously improve the development process."
+                }
+            }
         }
+    },
+    "portfolio": {
+        "title": "CUSTOM WEB SOLUTIONS",
+        "subtitle": "DEVELOPMENT, AUTOMATION, AND RESULTS",
+        "description": "I transform ideas into digital realities. With experience in WordPress and React/Next.js web development and process automation with Make.com, I create efficient, scalable, and user-centered technical solutions. From websites and e-commerce to interactive applications and automated workflows, each project is designed to meet clear objectives: performance, security, and growth.",
+        "ascent": "Looking for robust web development or process optimization through technology? Let's talk.",
+        "projects":{
+            "wordpress":{
+                "content":{
+                    "title": "Wordpress Development",
+                    "description": "Specialized in creating robust and scalable web solutions:",
+                    "main": {
+                        "1": "Custom websites: Responsive design, optimized for SEO and speed.",
+                        "2": "E-commerce (WooCommerce): Online stores with payment gateways, inventory management, and improved user experience.",
+                        "3": "Technical Support and Hosting: Server configuration (cPanel), migrations, security, and database maintenance."
+                    }
+                },
+                "visa_advisers":{
+                    "short_description": "Development and maintenance of web content for NZ visas, including designing informational pages, updating blogs, and redesigning existing sections.",
+                    "description": "Visa Advisers Immigration Solutions continually requests front-end support for the design of new informational pages for new visa types in New Zealand, as well as for the redesign of existing pages and for the publication of blogs and news."
+                },
+                "factronics":{
+                    "short_description": "Technical content management: creating blogs, news, and information sections for advanced industrial solutions.",
+                    "description": "Factronics is a company that provides coding, inspection, packaging, and automation solutions to the industrial sector. My work for this company has included technical support for the development of news, blogs, and the launch of new industrial machines."
+                },
+                "indicame":{
+                    "short_description": "Continuous technical support for the cannabis platform: content updates, blogs, and web environment maintenance.",
+                    "description": "Indicame.Link, a Colombian platform for the cannabis community, provides buyers and sellers with access to a platform that facilitates contact and trade of cannabis. My role for the platform has been to provide technical support and blog posting, news, updates, and business opportunities, as well as the ongoing maintenance of the website."
+                },
+                "new_blossom":{
+                    "short_description": "Conversion of an informational site to a complete medical e-commerce site with a booking system, secure payments, and specialized landing pages.",
+                    "description": "New Blossom Medical Aesthetics already had a website that presented all the information about its aesthetic procedures. However, it needed ongoing support to transform it into an online store where clients could purchase, book, and pay for their medical procedures. My work on this website included the complete setup of the virtual store, from product design to the secure payment system, as well as the development of informative landing pages about its procedures and ongoing support for the requested requirements."
+                },
+                "idealaser":{
+                    "short_description": "Complete backend redesign: technology upgrades, performance optimization, and stability fixes for a critical website.",
+                    "description": "IdeaLaser has been one of the most delicate pages I have ever worked with, this was because it presented many problems, previously it was impossible to make changes without the page server going down, in addition, it was outdated in every aspect, for this reason, my role on the IdeaLaser page was to support the website by performing deep maintenance in which the version of the programming language, its development environment, extensions, plugins and everything related to the backend were correctly updated, resulting in a more stable, scalable and optimized website, considerably improving its loading time and the sustainability of the website."
+                },
+                "coordenadas":{
+                    "short_description": "Complete redesign of the corporate website with HubSpot integrations, SEO optimization, and ongoing content support.",
+                    "description": "Redesign for the website of Coordenadas.Co, a marketing and web development agency. Previously, they had an outdated website that did not take full advantage of the tools it had. However, they decided to completely renew the design and technology to attract more potential clients. For this project, I have had the role of lead developer, developing the website and creating connections to the tools they use, for example, HubSpot. For this site, a user-friendly website has been developed, with good practices and completely customized, continuously providing support for publishing blogs, case studies, landing pages, and API connections to other tools."
+                },
+                "2hermanos":{
+                    "short_description": "Custom bilingual (ES/EN) web development that faithfully reflects the brand identity with an exclusive design.",
+                    "description": "2Hermanos, premium rum made in Panama, was interested in creating a basic website, but with a totally unique and personalized design made by themselves, the big challenge with this website was to replicate the design on the website, the interesting thing about this page is that it has a unique and interesting design, totally personalized and made by the 2 Hermanos brand, completely portraying the essence of their rum, something very important to mention is that a totally bilingual page was developed (Spanish / English), resulting in a page for 2Hermanos totally personalized, unique and complete."
+                },
+                "pro_rei":{
+                    "short_description": "Creation of a 100% customized corporate website with a focus on security, performance, and lead generation.",
+                    "description": "Pro-Rei, experts in transforming residential spaces in the United States, were interested in creating a website that would share their expertise and attract new clients interested in their services, facilitating contact between clients and Pro-Rei management. As the lead developer, I had complete creative freedom in creating the page, and was in contact with Pro-Rei to create a 100% customized page. The result was a unique page that showcases Pro-Rei's identity. It also included complete configuration to increase website security, along with best practices that influence website optimization and efficiency."
+                },
+                "smfarma":{
+                    "short_description": "Professional website design and development for a pharmacy consultancy in Spain, with an elegant and minimalist style that reflects its commitment and professionalism.",
+                    "description": "I served as the web designer and developer for SMFarma. They wanted a professional website that was fully aligned with their business, which is pharmacy sales consulting in Spain. Therefore, they wanted to portray their professionalism, passion, and commitment on their website, giving me the opportunity to capture all of this in an elegant and minimalist design suitable for a business of this nature."
+                },
+                "piojitos_boom":{
+                    "short_description": "Custom web development for a clinic specializing in head lice removal, conveying confidence and security to patients with a unique design.",
+                    "description": "I worked as a web developer for the Piojitos Boom website, a center specializing in the elimination of lice and nits. I was responsible for creating the design of this website, portraying trust and security in its future patients, while also meeting its design standards to deliver a completely personalized and unique website for them."
+                },
+                "clinica_aguilar":{
+                    "short_description": "Creation of a professional website for a podiatry center, focusing on clarity and trust for patients, detailing treatments concisely.",
+                    "description": "I was the web developer for the Aguilar Foot Clinic website. As a center specializing in foot treatment and health, they were interested in building a website that was fully focused on professionalism and trust for their patients. Therefore, I was responsible for building a professional website focused on a health center, in a way that properly explained all of their treatments, resulting in a professional, clear, and concise website."
+                },
+                "customizarte":{
+                    "short_description": "Artistic web design and development for a tattoo studio, integrating its visual identity and online store of personalized products.",
+                    "description": "I had the role of designer and web developer for the Customizarte website, as a tattoo and piercing studio located in Spain, they wanted the design of their website to perfectly portray their artistic style, playing with their color palette and with dynamic details, this website perfectly portrays the artistic style of each of their artists, while being totally customized and focused on this business, in turn, a virtual store was developed where Customizarte publishes all the products made by its artists."
+                }
+            }
+        }
+    },
+    "contact": {
+        "message": "Your message has been successfully sent. I will get in touch with you as soon as possible to assist you.",
+        "title_1": "Contact me",
+        "title_2": "Thank you!",
+        "form": {
+            "name_label": "Name",
+            "name_placeholder": "Full Name",
+            "name_error": "Please enter a valid name",
+            "email_label": "Email",
+            "email_placeholder": "Enter your email",
+            "email_error": "Please enter a valid email",
+            "textarea_label": "How can I help you?"
+        }
+    },
+    "buttons": {
+        "project": "See Proyects",
+        "learn": "Learn More",
+        "close": "Close",
+        "cancel": "Cancel",
+        "submit": "Submit",
+        "visit": "Visit Site"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "inicio": {
+    "home": {
         "sequence": {
             "line_1": "Desarrollador Web Full Stack",
             "line_2": "Desarrollador Wordpress",
@@ -8,10 +8,129 @@
             "line_5": "Desarrollador de Automatizaciones",
             "line_6": "Diseñador en Figma"
         },
-        "description": "Estudiante de Ingeniería de Sistemas con un énfasis en desarrollo web y de software, me dedico a crear experiencias digitales de gran impacto para el ámbito empresarial.",
-        "button": {
-            "projects": "Ver Proyectos",
-            "contact": "Contáctame"
+        "description": "Estudiante de Ingeniería de Sistemas con un énfasis en desarrollo web y de software, me dedico a crear experiencias digitales de gran impacto para el ámbito empresarial."
+    },
+    "about_me": {
+        "title": "SOBRE MI",
+        "description": "Soy Macjainer Molano Ramos, estudiante de Ingeniería de Sistemas con una fuerte pasión por el desarrollo web y la ingeniería de software. Poseo una sólida experiencia como desarrollador en WordPress y React, gestión de dominios y administración de servidores de alojamiento web mediante cPanel, además del manejo de plataformas de automatización No-Code.",
+        "title_2": "Toda mi experiencia laboral",
+        "experience":{
+            "sibartech": {
+                "title": "Desarrollador Web en Wordpress y React",
+                "short_description": "Trabajé como Desarrollador Web liderando proyectos en WordPress y React, desarrollando sitios dinámicos, responsivos y optimizados, desde la idea hasta su implementación final.",
+                "description": "Trabajé durante un año como desarrollador web en Sibartech Technology, donde dirigí y contribuí a múltiples proyectos enfocados en el desarrollo de sitios web dinámicos y funcionales utilizando WordPress y React. En este rol, fui responsable de planificar y ejecutar proyectos web desde la etapa inicial hasta la implementación final. Diseñé interfaces modernas y responsivas, optimicé el rendimiento del sitio web para tiempos de carga más rápidos e implementé soluciones avanzadas de administración de contenido en WordPress. Además, desarrollé integraciones personalizadas utilizando React para mejorar la interactividad y la funcionalidad del proyecto. También realicé configuraciones avanzadas de servidores, administré bases de datos y garanticé la seguridad del sitio web. En Sibartech Technology, trabajé en estrecha colaboración con los clientes para comprender sus necesidades específicas, brindando soluciones alineadas con sus objetivos comerciales. Esta experiencia me permitió desarrollar habilidades de gestión de proyectos y colaborar de manera efectiva con equipos multidisciplinarios.",
+                "date": "Enero 2023 - Febrero 2024",
+                "habilities": {
+                    "1": "Planificación y ejecución de proyectos web: Responsabilidad de llevar proyectos desde la etapa inicial hasta la implementación final, asegurando que se cumplan los objetivos y plazos establecidos.",
+                    "2": "Colaboración con clientes y equipos multidisciplinarios: Trabajo cercano con clientes para comprender sus necesidades y colaboración efectiva con equipos multidisciplinarios para alcanzar objetivos comunes.",
+                    "3": "Desarrollo de integraciones personalizadas con React: Creación de soluciones personalizadas para mejorar la interactividad y funcionalidad de los proyectos, adaptándose a los requerimientos específicos.",
+                    "4": "Diseño de interfaces de usuario (UI) modernas y responsivas: Creación de interfaces atractivas y funcionales que se adapten a diferentes dispositivos y brinden una experiencia de usuario óptima.",
+                    "5": "Configuración avanzada de servidores y seguridad web: Realización de configuraciones de servidores y garantía de la seguridad de los sitios web para protegerlos de vulnerabilidades."
+                }
+            },
+            "coordenadas": {
+                "title": "Desarrollador Web Ejecutivo",
+                "short_description": "Actualmente me desempeño como Desarrollador Web Ejecutivo, creando y manteniendo sitios web a medida con WordPress y React, enfocado en UX, rendimiento y soluciones personalizadas para cada cliente.",
+                "description": "Actualmente me desempeño como Desarrollador Web Ejecutivo en Coordenadas.co, donde me he especializado en la creación y mantenimiento de sitios web a la medida utilizando WordPress y React. Mi principal foco fue mejorar la experiencia de usuario (UX) y optimizar el rendimiento de las plataformas desarrolladas. Como desarrollador líder implementé funcionalidades interactivas utilizando React, personalicé temas y plugins en WordPress con PHP y aseguré la compatibilidad con dispositivos móviles y navegadores. También trabajé en la integración de herramientas SEO para mejorar la visibilidad en buscadores, configuré servidores web y administré dominios para asegurar el buen funcionamiento de los proyectos. En este rol, logré entregar proyectos dentro de los plazos establecidos y con altos estándares de calidad, adaptándome a las necesidades específicas de los clientes.",
+                "date": "Marzo 2024 - Presente",
+                "habilities": {
+                    "1": "Desarrollo y personalización de temas y plugins en WordPress: Capacidad para diseñar y desarrollar temas y plugins personalizados que se ajusten a las necesidades específicas de los clientes.",
+                    "2": "Creación de interfaces de usuario dinámicas y responsivas con React.js: Diseño y desarrollo de interfaces de usuario interactivas y adaptables a diferentes dispositivos y tamaños de pantalla.",
+                    "3": "Implementación y gestión de bases de datos (SQL, MySQL): Configuración y mantenimiento de bases de datos eficientes y seguras.",
+                    "4": "Optimización de rendimiento y SEO: Implementación de técnicas de optimización para mejorar la velocidad de carga de las páginas y su posicionamiento en motores de búsqueda.",
+                    "5": "Gestión de servidores y administración de dominios a través de cPanel: Configuración y mantenimiento de servidores web y gestión de dominios utilizando cPanel.",
+                    "6": "Colaboración en equipos de desarrollo ágil: Participación en reuniones diarias de stand-up, planificación de sprints y revisiones de retrospectiva para mejorar continuamente el proceso de desarrollo."
+                }
+            }
         }
+    },
+    "portfolio": {
+        "title": "SOLUCIONES WEB A MEDIDA",
+        "subtitle": "DESARROLLO, AUTOMATIZACIÓN Y RESULTADOS",
+        "description": "Transformo ideas en realidades digitales. Con experiencia en desarrollo web WordPress y React/Next.js y automatización de procesos con Make.com, creo soluciones técnicas eficientes, escalables y centradas en el usuario. Desde sitios web y e-commerce hasta aplicaciones interactivas y flujos de trabajo automatizados, cada proyecto se diseña para cumplir objetivos claros: rendimiento, seguridad y crecimiento.",
+        "ascent": "¿Buscas un desarrollo web robusto u optimizar procesos con tecnología? Hablemos.",
+        "projects":{
+            "wordpress":{
+                "content":{
+                    "title": "Desarrollo con WordPress",
+                    "description": "Especializado en crear soluciones web robustas y escalables:",
+                    "main": {
+                        "1": "Sitios web a medida: Diseño responsive, optimizados para SEO y velocidad.",
+                        "2": "E-commerce (WooCommerce): Tiendas online con pasarelas de pago, gestión de inventario y experiencia de usuario mejorada.",
+                        "3": "Soporte Técnico y Hosting: Configuración de servidores (cPanel), migraciones, seguridad y mantenimiento de bases de datos."
+                    }
+                },
+                "visa_advisers":{
+                    "short_description": "Desarrollo y mantenimiento de contenido web para visas en NZ, incluyendo diseño de páginas informativas, actualización de blogs y rediseño de secciones existentes.",
+                    "description": "Visa Advisers Immigration Solutions solicita continuamente soporte front-end para el diseño de nuevas páginas informativas para nuevos tipos de visas en Nueva Zelanda, así como para el rediseño de páginas existentes y para la publicación de blogs y noticias."
+                },
+                "factronics":{
+                    "short_description": "Gestión de contenido técnico: creación de blogs, noticias y secciones informativas para soluciones industriales avanzadas.",
+                    "description": "Factronics es una empresa que brinda soluciones de codificación, inspección, empaque y automatización al sector industrial, mi trabajo para esta empresa ha sido de soporte técnico para el desarrollo de noticias, blogs y lanzamiento de nuevas máquinas industriales."
+                },
+                "indicame":{
+                    "short_description": "Soporte técnico continuo para plataforma cannábica: actualización de contenido, blogs y mantenimiento del entorno web.",
+                    "description": "Indicame.Link, una plataforma colombiana para la comunidad cannábica donde compradores y vendedores tienen acceso a una plataforma que facilita el contacto y el comercio de cannabis. Mi trabajo para plataforma ha sido brindar soporte técnico y para la publicación de blogs, noticias, actualizaciones y negocios, así como para la actualización continua del entorno web."
+                },
+                "new_blossom":{
+                    "short_description": "Conversión de sitio informativo a e-commerce médico completo con sistema de reservas, pagos seguros y landing pages especializadas.",
+                    "description": "New Blossom Medical Aesthetics ya contaba con un sitio web donde presentaba toda la información sobre sus procedimientos estéticos. Sin embargo, necesitaba apoyo continuo para convertirlo en una tienda online donde los clientes pudieran comprar, reservar y pagar sus procedimientos médicos. Mi trabajo en este sitio web fue la configuración completa de la tienda virtual, desde el diseño de sus productos hasta el sistema de pago seguro, además del desarrollo de landing pages informativas sobre sus procedimientos y el apoyo continuo a los requisitos solicitados."
+                },
+                "idealaser":{
+                    "short_description": "Reestructuración completa del backend: actualización de tecnologías, optimización de rendimiento y solución de problemas de estabilidad para un sitio web crítico.",
+                    "description": "IdeaLaser ha sido una de las páginas más delicadas con las que he trabajado, esto debido a que presentaba muchos problemas, anteriormente era imposible realizar cambios sin que el servidor de la página se cayera, además, estaba desactualizada en todo aspecto, por esta razón, mi rol en la página de IdeaLaser fue de soporte a la página web realizando un mantenimiento profundo en el cual se actualizó correctamente la versión del lenguaje de programación, su entorno de desarrollo, extensiones, plugins y todo lo relacionado al backend, dando como resultado un sitio web más estable, escalable y optimizado, mejorando considerablemente su tiempo de carga y la sostenibilidad del sitio web."
+                },
+                "coordenadas":{
+                    "short_description": "Rediseño completo de sitio web corporativo con integraciones a HubSpot, optimización SEO y soporte continuo para contenido.",
+                    "description": "Rediseño para el Sitio web de Coordenadas.Co, agencia de marketing y desarrollo web, anteriormente contaban con un sitio web anticuado que no aprovechaba al máximo las herramientas con la que contaba, sin embargo, decidieron renovar por completo el diseño y la tecnología para atraer más clientes potenciales, para este proyecto he tenido el rol de desarrollador principal, desarrollando el sitio web y creando las conexiones a las herramientas que utilizan, por ejemplo, HubSpot, para este sitio se ha desarrollado un sitio web amigable, con buenas prácticas y completamente personalizado, brindando continuamente soporte para la publicación de blogs, casos de estudio, landing pages y conexiones API a otras herramientas."
+                },
+                "2hermanos":{
+                    "short_description": "Desarrollo web personalizado bilingüe (ES/EN) que refleja fielmente la identidad de marca con diseño exclusivo.",
+                    "description": "2Hermanos, ron premium elaborado en Panamá, estaba interesado en crear una página web básica, pero con un diseño totalmente único y personalizado hecho por ellos mismos, el gran reto con esta página web fue replicar el diseño en la página web, lo interesante de esta página es que cuenta con un diseño único e interesante, totalmente personalizado y realizado por la marca 2 Hermanos, retratando por completo la esencia de su ron, algo muy importante a mencionar es que se desarrolló una página totalmente bilingüe (español/inglés), dando como resultado una página para 2Hermanos totalmente personalizada, única y completa."
+                },
+                "pro_rei":{
+                    "short_description": "Creación de sitio web corporativo 100% personalizado con enfoque en seguridad, rendimiento y generación de leads.",
+                    "description": "Pro-Rei, expertos en transformar espacios residenciales en Estados Unidos, estaban interesados en crear un sitio web que compartiera su experiencia y atrajera nuevos clientes interesados en sus servicios, facilitando el contacto entre clientes y los directivos de Pro-Rei, como desarrollador líder, tuve total libertad creativa para la creación de la página, teniendo contacto con Pro-Rei para crear una página 100% personalizada, como resultado, una página única que demuestra la identidad de Pro-Rei, además, la configuración completa para aumentar la seguridad del sitio web, junto con buenas prácticas que influyen en la optimización y eficiencia del sitio web."
+                },
+                "smfarma":{
+                    "short_description": "Diseño y desarrollo de web profesional para asesoría de farmacias en España, con estilo elegante y minimalista que refleja su compromiso y profesionalismo.",
+                    "description": "Tuve el rol de diseñador y desarrollador web para la página de SMFarma, querían una web profesional que estuviera completamente alineada con su negocio, el cual es la asesoría en ventas de farmacias en España, por esto, querían retratar su profesionalismo, pasión y compromiso en su página web, dándome la oportunidad de plasmas todo esto en un diseño elegante y minimalista para un negocio de esta índole."
+                },
+                "piojitos_boom":{
+                    "short_description": "Desarrollo web personalizado para clínica especializada en eliminación de piojos, transmitiendo confianza y seguridad a pacientes con un diseño único.",
+                    "description": "Tuve el rol de desarrollador web para la página de Piojitos Boom, como centro especializado en la eliminación de piojos y liendres, fui el responsable de la construcción del diseño de esta página web, retratando confianza y seguridad en sus futuros pacientes, a su vez, cumpliendo con sus estándares de diseño para entregar una web totalmente personalizada y única para ellos."
+                },
+                "clinica_aguilar":{
+                    "short_description": "Creación de web profesional para centro podológico, con enfoque en claridad y confianza para pacientes, detallando tratamientos de forma concisa.",
+                    "description": "Tuve el rol de desarrollador web para la página de la Clínica del Pie Aguilar, como centro especializado en el tratamiento y salud de los pies, estaban interesados en la construcción de una página web totalmente enfocada al profesionalismo y la confianza hacia sus pacientes, por esto, tuve la responsabilidad de construir una página web profesional enfocada a un centro de salud, de forma que se explicara correctamente todos sus tratamientos, dando como resultado una web profesional, clara y concisa."
+                },
+                "customizarte":{
+                    "short_description": "Diseño y desarrollo web artístico para estudio de tatuajes, integrando su identidad visual y tienda online de productos personalizados.",
+                    "description": "Tuve el rol de diseñador y desarrollador web para la página de Customizarte, como estudio de tatuajes y piercings ubicado en España, querían que el diseño de su web retratara a la perfección su estilo artístico, jugando con su paleta de colores y con detalles dinámicos, este sitio web retrata perfectamente el estilo artístico que tiene cada uno de su artistas, a su vez de estar totalmente personalizada y enfocada para este negocio, a su vez, fue desarrollada una tienda virtual donde Customizarte publica todos los productos realizados por sus artistas"
+                }
+            }
+        }
+    },
+    "contact": {
+        "message": "Tu mensaje ha sido enviado con éxito. Me pondré en contacto contigo lo más pronto posible para ayudarte.",
+        "title_1": "Contáctame",
+        "title_2": "¡Gracias!",
+        "form": {
+            "name_label": "Nombre",
+            "name_placeholder": "Nombre Completo",
+            "name_error": "Por favor ingresa un nombre válido",
+            "email_label": "Correo Electrónico",
+            "email_placeholder": "Ingresa tu correo electrónico",
+            "email_error": "Por favor ingresa un correo válido",
+            "textarea_label": "¿Cómo puedo ayudarte?"
+        }
+    },
+    "buttons": {
+        "project": "Ver Proyectos",
+        "learn": "Conocer Más",
+        "close": "Cerrar",
+        "cancel": "Cancelar",
+        "submit": "Enviar",
+        "visit": "Visitar Sitio"
     }
 }

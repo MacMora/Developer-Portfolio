@@ -25,17 +25,17 @@ function Introduction() {
             <br />
             <TypeAnimation
               sequence={[
-                t("inicio.sequence.line_1"),
+                t("home.sequence.line_1"),
                 1000,
-                t("inicio.sequence.line_2"),
+                t("home.sequence.line_2"),
                 1000,
-                t("inicio.sequence.line_3"),
+                t("home.sequence.line_3"),
                 1000,
-                t('inicio.sequence.line_4'),
+                t('home.sequence.line_4'),
                 1000,
-                t('inicio.sequence.line_5'),
+                t('home.sequence.line_5'),
                 1000,
-                t('inicio.sequence.line_6'),
+                t('home.sequence.line_6'),
                 1000
               ]}
               wrapper="span"
@@ -45,13 +45,13 @@ function Introduction() {
             />
           </h1>
           <p className="mx-auto mb-2 text-xl md:mx-0 md:mb-8">
-            {t("inicio.description")}
+            {t("home.description")}
           </p>
           <div className="flex items-center justify-center md:justify-start">
             <Link
               href="/portfolio"
             >
-              <Button color="secondary" variant="ghost" >{t('inicio.button.projects')}</Button>
+              <Button color="secondary" variant="ghost" >{t('buttons.project')}</Button>
             </Link>
           </div>
         </div>

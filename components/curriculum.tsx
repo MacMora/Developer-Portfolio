@@ -1,6 +1,7 @@
 "use client";
-import { experiencia } from "@/data";
+import { TranslatedData } from "@/data";
 import { useState, useEffect } from "react";
+import useTranslation from "@/hooks/use-translation";
 import React from "react";
 import {
   Modal,
@@ -24,6 +25,11 @@ interface ExperienceItem {
 }
 
 const Curriculum = () => {
+
+  const { t } = useTranslation();
+
+  const { experiencia } = TranslatedData();
+
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const [selectedExperience, setSelectedExperience] =
@@ -74,11 +80,11 @@ const Curriculum = () => {
               <div>{data.short_description}</div>
               <div className="flex flex-wrap gap-3 py-2">
                 <Button
-                  className="rounder-full capitalize text-[#E0E0E0E0] bg-[#7828c8]  dark:bg-[#9455d3]"
-                  variant="flat"
+                  color="secondary"
+                  variant="ghost"
                   onPress={() => handleOpen(data)}
                 >
-                  Conocer más
+                  {t('buttons.learn')}
                 </Button>
               </div>
             </div>
@@ -113,7 +119,7 @@ const Curriculum = () => {
                 </ModalBody>
                 <ModalFooter>
                   <Button color="danger" variant="light" onPress={onClose}>
-                    Cerrar
+                    {t('buttons.close')}
                   </Button>
                 </ModalFooter>
               </>
