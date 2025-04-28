@@ -4,6 +4,7 @@ import ContainerPage from "@/components/container";
 import TransitionPage from "@/components/transition-page";
 import Wordpress from "@/components/portfolio/wordpress";
 import useTranslation from "@/hooks/use-translation";
+import ReactProjects from "@/components/portfolio/react";
 
 const Portfolio = () => {
 
@@ -35,6 +36,7 @@ const Portfolio = () => {
             </div>
             <div>
               <Wordpress />
+              <ReactProjects />
             </div>
           </div>
         </ContainerPage>

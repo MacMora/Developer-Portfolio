@@ -32,7 +32,7 @@
                 "title": "Desarrollador Web Ejecutivo",
                 "short_description": "Actualmente me desempeño como Desarrollador Web Ejecutivo, creando y manteniendo sitios web a medida con WordPress y React, enfocado en UX, rendimiento y soluciones personalizadas para cada cliente.",
                 "description": "Actualmente me desempeño como Desarrollador Web Ejecutivo en Coordenadas.co, donde me he especializado en la creación y mantenimiento de sitios web a la medida utilizando WordPress y React. Mi principal foco fue mejorar la experiencia de usuario (UX) y optimizar el rendimiento de las plataformas desarrolladas. Como desarrollador líder implementé funcionalidades interactivas utilizando React, personalicé temas y plugins en WordPress con PHP y aseguré la compatibilidad con dispositivos móviles y navegadores. También trabajé en la integración de herramientas SEO para mejorar la visibilidad en buscadores, configuré servidores web y administré dominios para asegurar el buen funcionamiento de los proyectos. En este rol, logré entregar proyectos dentro de los plazos establecidos y con altos estándares de calidad, adaptándome a las necesidades específicas de los clientes.",
-                "date": "Marzo 2024 - Presente",
+                "date": "Marzo 2024 - Abril 2025",
                 "habilities": {
                     "1": "Desarrollo y personalización de temas y plugins en WordPress: Capacidad para diseñar y desarrollar temas y plugins personalizados que se ajusten a las necesidades específicas de los clientes.",
                     "2": "Creación de interfaces de usuario dinámicas y responsivas con React.js: Diseño y desarrollo de interfaces de usuario interactivas y adaptables a diferentes dispositivos y tamaños de pantalla.",
@@ -108,6 +108,21 @@
                     "short_description": "Diseño y desarrollo web artístico para estudio de tatuajes, integrando su identidad visual y tienda online de productos personalizados.",
                     "description": "Tuve el rol de diseñador y desarrollador web para la página de Customizarte, como estudio de tatuajes y piercings ubicado en España, querían que el diseño de su web retratara a la perfección su estilo artístico, jugando con su paleta de colores y con detalles dinámicos, este sitio web retrata perfectamente el estilo artístico que tiene cada uno de su artistas, a su vez de estar totalmente personalizada y enfocada para este negocio, a su vez, fue desarrollada una tienda virtual donde Customizarte publica todos los productos realizados por sus artistas"
                 }
+            },
+            "react": {
+                "content": {
+                    "title": "Desarrollo con React en Next.js",
+                    "description": "Especializado en crear aplicaciones web modernas, rápidas y escalables",
+                    "main": {
+                        "1": "Desarrollo de interfaces interactivas y dinámicas, optimizadas para rendimiento, SEO y accesibilidad. Utilizo Next.js para aprovechar sus capacidades de renderizado del lado del servidor (SSR) y generación de sitios estáticos (SSG), mejorando la velocidad y la experiencia del usuario.",
+                        "2": "Integración de Next.js con APIs REST, bases de datos y sistemas de autenticación. Creación de aplicaciones web completas y seguras, desde el frontend hasta el backend, para ofrecer soluciones que se ajusten perfectamente a las necesidades del cliente.",
+                        "3": "Uso de técnicas avanzadas como lazy loading y optimización de imágenes para garantizar tiempos de carga rápidos y mejorar la experiencia del usuario, especialmente en proyectos de gran escala."
+                    }
+                },
+                "paywise": {
+                    "short_description": "Desarrollo de la página de documentación de PayWise, replicando su diseño y facilitando la integración de su API en proyectos de software, utilizando Next.js y desplegado en cPanel.",
+                    "description": "PayWise es una plataforma bancaria en Trinidad y Tobago que cuenta con una API para integrarse en proyectos de software, para este proyecto fui desarrollador principal de la página de documentación, replicando el diseño propuesto por PayWise y almacenando toda la información que un desarrollador necesita para integrar la API de PayWise, este sitio web fue desarrollado en Next.js y desplegado en un hosting web mediante cPanel."
+                }
             }
         }
     },
@@ -131,6 +146,7 @@
         "close": "Cerrar",
         "cancel": "Cancelar",
         "submit": "Enviar",
-        "visit": "Visitar Sitio"
+        "visit": "Visitar Sitio",
+        "repository": "Visitar GitHub"
     }
 }

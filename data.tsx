@@ -5,7 +5,6 @@ import {
   Linkedin,
   Rss,
   Github,
-  //Download,
   Earth,
 } from "lucide-react";
 import useTranslation from "./hooks/use-translation";
@@ -31,11 +30,6 @@ export const socialNetworks = [
     logo: <Rss size={30} strokeWidth={1} />,
     src: "https://es.fiverr.com/s/Egl2vYD",
   },
-  /*{
-    id: 5,
-    logo: <Download size={30} strokeWidth={1} />,
-    src: "#!",
-  },*/
 ];
 
 export const itemsNavbar = [
@@ -271,5 +265,21 @@ export function DataPortfolio() {
         habilities: ["Wordpress", "Elementor Pro", "Envato", "Figma"],
       },
     ],
+    dataReact: [
+      {
+        id: 1,
+        title: "PayWise",
+        short_description: t(
+          "portfolio.projects.react.paywise.short_description"
+        ),
+        description: t(
+          "portfolio.projects.react.paywise.description"
+        ),
+        image: "/images/react/paywise-banner.jpg",
+        urlWeb: "https://docs.paywise.co/",
+        urlGithub: "https://github.com/MacMora/Paywise",
+        habilities: ["Next.js", "React", "cPanel"],
+      },
+    ]
   };
 }
