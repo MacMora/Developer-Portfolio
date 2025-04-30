@@ -16,7 +16,7 @@
         "title_2": "All My Work Experience",
         "experience":{
             "sibartech": {
-                "title": "Web Developer in WordPress and React",
+                "title": "Freelance Web Developer in Wordpress and React",
                 "short_description": "I worked as a Web Developer leading projects in WordPress and React, developing dynamic, responsive, and optimized websites from concept to final implementation.",
                 "description": "I worked for a year as a web developer at Sibartech Technology, where I led and contributed to multiple projects focused on developing dynamic and functional websites using WordPress and React. In this role, I was responsible for planning and executing web projects from the initial stage to final implementation. I designed modern and responsive interfaces, optimized website performance for faster loading times, and implemented advanced content management solutions in WordPress. Additionally, I developed custom integrations using React to enhance interactivity and project functionality. I also carried out advanced server configurations, managed databases, and ensured website security. At Sibartech Technology, I worked closely with clients to understand their specific needs, providing solutions aligned with their business objectives. This experience allowed me to develop project management skills and collaborate effectively with multidisciplinary teams.",
                 "date": "January 2023 - February 2024",
@@ -30,8 +30,8 @@
             },
             "coordenadas": {
                 "title": "Executive Web Developer",
-                "short_description": "I currently work as an Executive Web Developer, creating and maintaining custom websites with WordPress and React, focusing on UX, performance, and personalized solutions for each client.",
-                "description": "I currently work as an Executive Web Developer at Coordenadas.co, specializing in creating and maintaining custom websites using WordPress and React. My main focus has been improving user experience (UX) and optimizing platform performance. As a lead developer, I implemented interactive functionalities using React, customized themes and plugins in WordPress with PHP, and ensured compatibility with mobile devices and browsers. I also worked on integrating SEO tools to improve search engine visibility, configured web servers, and managed domains to ensure project functionality. In this role, I successfully delivered projects within deadlines and with high-quality standards, adapting to clients' specific needs.",
+                "short_description": "I worked as an Executive Web Developer, creating and maintaining custom websites with WordPress and React, focusing on UX, performance, and customized solutions for each client.",
+                "description": "I worked as an Executive Web Developer at Coordenadas.co, where I specialized in the creation and maintenance of custom websites using WordPress and React. My main focus was improving the user experience (UX) and optimizing the performance of the platforms I developed. As a lead developer, I implemented interactive features using React, customized WordPress themes and plugins with PHP, and ensured compatibility with mobile devices and browsers. I also worked on the integration of SEO tools to improve search engine visibility, configured web servers, and managed domains to ensure the smooth operation of projects. In this role, I delivered projects on time and with high quality standards, adapting to the specific needs of clients.",
                 "date": "March 2024 - April 2025",
                 "habilities": {
                     "1": "Development and customization of themes and plugins in WordPress: Ability to design and develop custom themes and plugins tailored to clients' specific needs.",
